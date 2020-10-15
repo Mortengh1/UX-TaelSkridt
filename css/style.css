@@ -1,0 +1,142 @@
+/**
+ * file: css/style.css
+ **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+font-size: 2.5em;
+}
+
+/* HEADER */
+header {
+    background-color: #16293D;
+    padding: 1%;
+}
+#forside {
+    background-color: white; 
+    opacity: 0.8;
+}
+
+#logo a > img {
+    width: 125px;
+}
+#logo .forside_nav > img {
+    width: 150px;
+}
+
+nav {
+    display: grid; 
+    font-weight: 600;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.forside_nav{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+     color: #ec9335;
+}
+
+
+#logo {
+    grid-column: 1;
+}
+
+#nav1 {
+    grid-column: 4;
+}
+
+#nav2 {
+    grid-column: 5;
+}
+
+#nav3 {
+    grid-column: 6;
+}
+
+#nav4 {
+    grid-column: 7;
+}
+
+#nav5 {
+    grid-column: 8;
+}
+
+#nav6 {
+    grid-column: 9;
+}
+
+#nav7 {
+    grid-column: 10;
+}
+
+/* Dette for teksten i menuen til at være centreret */
+.navtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CONTENT */
+
+#body_forside {
+    background-image: url(../img/baggrund.jpg);
+          background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.forside_tekst {
+    margin-top: 10%;
+    padding-left: 10%;
+    color: white;
+}
+
+#registrer_knap {
+    padding-left: 17%;
+    
+    
+}
+
+#registrer_knap p {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+button {
+    background-color: #ec9335;
+    border-radius: 40px;
+    padding: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #3cac4c;
+}
