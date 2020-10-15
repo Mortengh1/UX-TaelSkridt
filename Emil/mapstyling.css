@@ -1,0 +1,43 @@
+#map1 {
+    position: absolute;
+    top: 140%;
+    bottom: 150%;
+    width: 35%;
+    height: 35%;
+}
+
+#map2 {
+    position: absolute;
+    top: 260%;
+    bottom: 250%;
+    width: 35%;
+    height: 35%;
+}
+
+#map3 {
+    position: absolute;
+    top: 360%;
+    bottom: 350%;
+    width: 35%;
+    height: 35%;
+}
+
+#indtast {
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+
+#indtast h2 {
+    padding-top: 2%;
+    padding-bottom: 5;
+    background-color: #16293D;
+    color: white;
+}
+
+input {
+    width: 90%;
+
+}
+
+tr {}
