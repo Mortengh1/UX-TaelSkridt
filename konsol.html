@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Tæl Skridt: Konsol</title>
     <meta name="author" content="Frederikke, Frederik & Morten">
-    <meta name="description" content="Jette fortæller om Café Parasollen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,7 +25,51 @@
         </nav>
     </header>
     <main>
+        <div class="outer">
+            <h1>Jquery Responsive Vertical Tabs</h1>
 
+            <div class="tab">
+
+                <ul>
+                    <li>
+                        <a class="tab-active" data-index="0" href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a data-index="1" href="#">Rediger hold</a>
+                    </li>
+                    <li>
+                        <a data-index="2" href="#">Indtast Skridt</a>
+                    </li>
+                    <li>
+                        <a data-index="3" href="#">Faktura</a>
+                    </li>
+                </ul>
+
+                <div class="content">
+                    <div class="content-active">
+                        <p>1Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                        <img src="images/1.png">
+                    </div>
+
+                    <div>
+                        <p>2Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                        <img src="images/2.jpg">
+                    </div>
+
+                    <div>
+                        <p>3Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                        <img src="images/3.jpg">
+                    </div>
+
+                    <div>
+                        <p>4Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                        <img src="images/4.png">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
 
     </main>
     <footer></footer>
@@ -35,4 +79,35 @@
 
     <!-- load JavaScript -->
     <script src="js/js.js"></script>
+    <script>
+    
+         $(document).ready(function() {
+
+            var widget = $('.tab');
+
+            var tabs = widget.find('ul a'),
+                content = widget.find('.content > div');
+
+            tabs.on('click', function (e) {
+
+                e.preventDefault();
+
+                // Get the data-index attribute, and show the matching content div
+
+                var index = $(this).data('index');
+
+                tabs.removeClass('tab-active');
+                content.removeClass('content-active');
+
+                $(this).addClass('tab-active');
+                content.eq(index).addClass('content-active');
+
+            });
+
+        });
+        
+    </script>
+    
+    
+    
 </body></html>

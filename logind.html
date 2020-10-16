@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="logind_body">
     <header>
         <nav>
             <div id="logo">
@@ -27,14 +27,49 @@
     </header>
     <main>
         <article class="content_logind">
+            <div class="bread">
+           <p>
+               <a href="">Forside</a>>Registrer
+           </p>
+           </div>
             <div class="logind_grid1">
+ <div class="container">
+                <div class="header">
+                    <h2>Log Ind</h2>
+                </div>
+                <form id="form" class="form">
 
+                        <!--EMAIL-->
+                        <div class="form-control">
+                            <label for="username">Email</label>
+                            <input type="email" placeholder="f.eks@mail.dk" id="email" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Fejl besked</small>
+                        </div>
 
+                        <!--KODE-->
+                        <div class="form-control">
+                            <label for="username">Adgangskode</label>
+                            <input type="password" placeholder="Adgangskode" id="password" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Fejl besked</small>
+                        </div>
+                    <div class="knap">
+                        <button>LOG IND</button>
+                    </div>
+                    
+                    <div class="allerede_login">
+                        <p>Er du ikke registreret?<br>
+                        Registrer <a href="konsol.html">her</a></p>
+                    </div>
+                    
+                </form>
+            </div>
             </div>
             <div class="logind_grid2">
                 <h1>Har du gået flere skridt <br>end <span id="navne"></span>?</h1>
-
-                <img src="img/walk" alt="Billede af folk der går">
             </div>
 
         </article>
