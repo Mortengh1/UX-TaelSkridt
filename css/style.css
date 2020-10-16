@@ -15,7 +15,7 @@ body {
 
 h1 {
     font-weight: bold;
-font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 /* HEADER */
@@ -23,35 +23,38 @@ header {
     background-color: #16293D;
     padding: 1%;
 }
+
 #forside {
-    background-color: white; 
+    background-color: white;
     opacity: 0.8;
 }
 
 #logo a > img {
     width: 125px;
 }
+
 #logo .forside_nav > img {
     width: 150px;
 }
 
 nav {
-    display: grid; 
+    display: grid;
     font-weight: 600;
-    
+
 }
 
 nav a {
     text-decoration: none;
     color: white;
 }
-.forside_nav{
+
+.forside_nav {
     text-decoration: none;
     color: black;
 }
 
 nav a:hover {
-     color: #ec9335;
+    color: #ec9335;
 }
 
 
@@ -97,9 +100,24 @@ nav a:hover {
 
 /* CONTENT */
 
+.bread {
+    padding-left: 2%;
+    color: #ec9335;
+}
+
+.bread a {
+    text-decoration: none;
+    color: #ec9335;
+}
+
+.bread a:hover {
+    text-decoration: underline;
+    color: #3cac4c;
+}
+
 #body_forside {
     background-image: url(../img/baggrund.jpg);
-          background-size: cover;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,8 +133,8 @@ nav a:hover {
 
 #registrer_knap {
     padding-left: 17%;
-    
-    
+
+
 }
 
 #registrer_knap p {
@@ -139,4 +157,214 @@ button {
 button:hover {
     cursor: pointer;
     background-color: #3cac4c;
+}
+
+/* REGISTRING */
+
+.content {
+    margin-top: 2%;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 60%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #16293D;
+    padding: 20px 40px;
+    color: white;
+}
+
+.header h2 {
+    margin: 0;
+    margin-left: 1%;
+}
+
+.form {
+    padding: 30px 40px;
+    display: grid;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form button {
+    background-color: #ec9335;
+    border: 2px solid #ec9335;
+    border-radius: 6px;
+    color: #fff;
+    font-size: ;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background-color: #3cac4c;
+    border: 2px solid #3cac4c;
+}
+
+.form_grid_1 {
+    grid-column: 1;
+    margin: 2%;
+}
+
+.form_grid_2 {
+    grid-column: 2;
+    margin: 2%;
+}
+
+.allerede_login {
+    text-align: center;
+}
+
+.allerede_login a {
+    color: #ec9335;
+    font-weight: 600;
+}
+
+.allerede_login a:hover {
+    text-decoration: none;
+    color: #3cac4c;
+}
+
+/* LOG ING */
+
+.content_logind {
+    display: grid;
+}
+
+.logind_grid1 {
+    grid-column: 1;
+}
+
+.logind_grid2 {
+    grid-column: 2;
+    text-align: center;
+}
+
+/*Skifter navne */
+#navne {
+    color: #ec9335;
+}
+
+#navne:before {
+    content: '';
+    animation: animate infinite 20s;
+}
+
+@keyframes animate {
+    0% {
+        content: 'Per';
+    }
+
+    10% {
+        content: 'Ulla';
+    }
+
+    20% {
+        content: 'Torben';
+    }
+
+    30% {
+        content: 'Tina';
+    }
+
+    40% {
+        content: 'Rasmus';
+    }
+
+    50% {
+        content: 'Caroline';
+    }
+
+    60% {
+        content: 'Kristoffer';
+    }
+
+    70% {
+        content: 'Mathilde';
+    }
+
+    80% {
+        content: 'Preben';
+    }
+
+    90% {
+        content: 'Susanne';
+    }
+
+    100% {
+        content: 'Tim';
+    }
 }
