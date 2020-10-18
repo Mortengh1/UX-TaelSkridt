@@ -82,6 +82,16 @@ $(document).ready(function () { // kører så snart DOM er klar
         return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     }
 
+    
+    //MODAL/POPUP VINDUE
+        setTimeout(function () {
+            $('.modal').css('display', 'block');
+        }, 5000);
+    });
+
+    $('.modalKnap').click(function () {
+        $('.modal').css('display', 'none');
+
     // ... min kode slut ...
 
 }); // denne line må ikke slettes

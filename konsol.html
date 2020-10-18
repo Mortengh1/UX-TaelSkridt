@@ -26,8 +26,9 @@
     </header>
     <main>
         <div class="outer">
-            <h1>Jquery Responsive Vertical Tabs</h1>
-
+            <div class="oversigt">
+                <img src="img/header" alt="Billede af Oversigt">
+            </div>
             <div class="tab">
 
                 <ul>
@@ -48,26 +49,65 @@
                 <div class="content">
                     <div class="content-active">
                         <p>1Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-                        <img src="images/1.png">
+                 
                     </div>
 
                     <div>
-                        <p>2Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-                        <img src="images/2.jpg">
+                       <section class="hold">
+                          <section class="tabs_header">
+                              <h2>Opret et vinder hold</h2>
+                          </section>
+                            <!--EMAIL-->
+                            <section class="deltagere">
+                        <label for="HoldNavn">Holdnavn:</label>
+                        <input type="text">
+                        <button>Opret Hold</button>
+                        </section>
+                       </section>
+                       <section class="hold">
+                          <section class="tabs_header">
+                              <h2>Tilføj deltagere til dit hold</h2>
+                          </section>
+                          <section class="deltagere">
+                           <label for="deltager">Holdkammerats Email:</label>
+                        <input type="text">
+                        <button>Tilføj deltager</button>
+                        </section>
+                       <section class="deltagere">
+                           <label for="deltager">Holdkammerats Email:</label>
+                        <input type="text">
+                        <button>Tilføj deltager</button>
+                        </section>
+                        <section class="deltagere">
+                           <label for="deltager">Holdkammerats Email:</label>
+                        <input type="text">
+                        <button>Tilføj deltager</button>
+                        </section>
+                         
+                        
+                       </section>
+                      
+                 
                     </div>
 
                     <div>
                         <p>3Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-                        <img src="images/3.jpg">
+                       
                     </div>
 
                     <div>
                         <p>4Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-                        <img src="images/4.png">
+               
                     </div>
 
                 </div>
 
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal_content">
+                <p>Vælg venligst en faktureringsmetode</p>
+                <a href="#faktura"><button class="modalKnap">Vælg</button></a>
             </div>
         </div>
 
@@ -80,15 +120,14 @@
     <!-- load JavaScript -->
     <script src="js/js.js"></script>
     <script>
-    
-         $(document).ready(function() {
+        $(document).ready(function() {
 
             var widget = $('.tab');
 
             var tabs = widget.find('ul a'),
                 content = widget.find('.content > div');
 
-            tabs.on('click', function (e) {
+            tabs.on('click', function(e) {
 
                 e.preventDefault();
 
@@ -105,9 +144,8 @@
             });
 
         });
-        
     </script>
-    
-    
-    
+
+
+
 </body></html>
