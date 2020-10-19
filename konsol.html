@@ -49,55 +49,50 @@
                 <div class="content">
                     <div class="content-active">
                         <p>1Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-                 
+
                     </div>
 
-                    <div>
-                       <section class="hold">
-                          <section class="tabs_header">
-                              <h2>Opret et vinder hold</h2>
-                          </section>
-                            <!--EMAIL-->
-                            <section class="deltagere">
-                        <label for="HoldNavn">Holdnavn:</label>
-                        <input type="text">
-                        <button>Opret Hold</button>
-                        </section>
-                       </section>
-                       <section class="hold">
-                          <section class="tabs_header">
-                              <h2>Tilføj deltagere til dit hold</h2>
-                          </section>
-                          <section class="deltagere">
-                           <label for="deltager">Holdkammerats Email:</label>
-                        <input type="text">
-                        <button>Tilføj deltager</button>
-                        </section>
-                       <section class="deltagere">
-                           <label for="deltager">Holdkammerats Email:</label>
-                        <input type="text">
-                        <button>Tilføj deltager</button>
-                        </section>
-                        <section class="deltagere">
-                           <label for="deltager">Holdkammerats Email:</label>
-                        <input type="text">
-                        <button>Tilføj deltager</button>
-                        </section>
-                         
-                        
-                       </section>
-                      
-                 
+                    <div class="tabs_grid1">
+                        <article class="rediger1">
+                            <section class="hold">
+                                <section class="tabs_header">
+                                    <h2>Opret et vinder hold</h2>
+                                </section>
+
+                                <section class="deltagere">
+                                    <label for="HoldNavn">Holdnavn:</label>
+                                    <input type="text">
+                                    <button>Opret Hold</button>
+                                </section>
+
+                            </section>
+                        </article>
+
+                        <article class="rediger2">
+                            <section class="hold">
+                                <section class="tabs_header">
+                                    <h2>Tilføj deltagere til dit hold</h2>
+                                </section>
+
+                                <section class="deltagere">
+                                    <label for="deltager">Holdkammerats Email:</label>
+                                    <input type="text">
+                                    <button>Tilføj deltager</button>
+                                </section>
+
+                            </section>
+                        </article>
+
                     </div>
 
                     <div>
                         <p>3Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-                       
+
                     </div>
 
                     <div>
-                        <p>4Lorem ipsum dolor ist amet, consectetur adipiscing elit. Suspendisse molestie volutpat consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-               
+                        <h2>Her kan du redigere dine faktureringsoplysninger</h2>
+
                     </div>
 
                 </div>
@@ -106,8 +101,90 @@
         </div>
         <div class="modal">
             <div class="modal_content">
-                <p>Vælg venligst en faktureringsmetode</p>
-                <a href="#faktura"><button class="modalKnap">Vælg</button></a>
+                <!--Form til oprettelse af bruger-->
+                <div class="container">
+                    <div class="header">
+                        <h2>Faktureringsoplysninger</h2>
+                    </div>
+                    <form id="form" class="form">
+                        <div class="form_grid_1">
+                            <!--NAVN -->
+                            <div class="form-control">
+                                <label for="username">Navn</label>
+                                <input type="text" placeholder="Navn" id="username" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Fejl besked</small>
+                            </div>
+
+                            <!--EMAIL-->
+                            <div class="form-control">
+                                <label for="username">Email</label>
+                                <input type="email" placeholder="f.eks@mail.dk" id="email" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Fejl besked</small>
+                            </div>
+                            <!--NR-->
+                            <div class="form-control">
+                                <label>Postnr.</label>
+                                <input type="nummer" placeholder="Indtast Postnr." id="nummer">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Fejl besked</small>
+                            </div>
+                        </div>
+                        <div class="form_grid_2">
+                            <!--FIRMA-->
+                            <div class="form-control">
+                                <label>Firma</label>
+                                <input type="firma" placeholder="Indtast firma" id="firma">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Fejl besked</small>
+                            </div>
+                            <!--KODE-->
+                            <div class="form-control">
+                                <label>Addresse</label>
+                                <input type="firma" placeholder="Indtast addresse" id="firma">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Fejl besked</small>
+                            </div>
+                            <!--GENTAG KODE-->
+                            <div class="form-control">
+                                <label>By</label>
+                                <input type="firma" placeholder="Indtast By" id="firma">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Fejl besked</small>
+                            </div>
+                        </div>
+                        <div class="form_grid_3">
+                            <section id="radio">
+                                <label>Betalingsmetode:<br></label>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Betalingskort/Netbank</label><br>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">E-fakturering (EAN)</label><br>
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Få tilsendt en faktura</label><br>
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Betalingskode</label>
+                            </section>
+                            
+                            <p class="besked">Du vil få tilsendt en email med en betalingsformular, udfra hvilken betalingsmetode du har valgt.</p>
+                            
+                        </div>
+                        <div class="modalKnap" class="knap">
+                            <button>Gem</button>
+                        </div>
+
+                    </form>
+                </div>
+
+
+
             </div>
         </div>
 

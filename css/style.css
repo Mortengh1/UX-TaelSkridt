@@ -284,6 +284,11 @@ button:hover {
     margin: 2%;
 }
 
+.form_grid_3 {
+    grid-column: 4;
+    margin: 2%;
+}
+
 .allerede_login {
     text-align: center;
 }
@@ -301,7 +306,7 @@ button:hover {
 /* LOG ING */
 
 .logind_body {
-     background-image: url(../img/baggrund_logind);
+    background-image: url(../img/baggrund_logind);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -332,7 +337,7 @@ button:hover {
 .logind_grid2 h1 {
     margin: 0;
     padding-top: 20%;
-   
+
 }
 
 /*Skifter navne */
@@ -404,8 +409,7 @@ button:hover {
 }
 
 /* The tabs */
-.
-.outer h1 {
+. .outer h1 {
     text-align: center;
     padding: 0px;
     font-family: 'Rubik', sans-serif;
@@ -473,7 +477,7 @@ button:hover {
 }
 
 .tab .content div.content-active {
-    display: block;
+    display: grid;
 }
 
 .tab .content div p {
@@ -488,6 +492,16 @@ button:hover {
     height: 300px;
 }
 
+
+
+.rediger1 {
+grid-column: 1;    
+}
+
+.rediger2 {
+    grid-column: 2;
+}
+
 .oversigt {
     display: block;
     text-align: center;
@@ -495,12 +509,47 @@ button:hover {
 
 .oversigt img {
     width: 70%;
-    
+
 }
 
 .hold {
     border: 1px solid #dddddd;
     margin-bottom: 2%;
+    padding: 30px 40px;
+    display: grid;
+}
+
+.hold label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.hold input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.hold button {
+    background-color: #ec9335;
+    border: 2px solid #ec9335;
+    border-radius: 6px;
+    color: #fff;
+    font-size: ;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.hold button:hover {
+    cursor: pointer;
+    background-color: #3cac4c;
+    border: 2px solid #3cac4c;
 }
 
 .tabs_header {
@@ -512,13 +561,15 @@ button:hover {
 .deltagere {
     display: block;
     margin-top: 2%;
-    
+
 }
+
+
 
 /* MODAL/POPUP VINDUE */
 
 .modal {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
     height: 100%;
@@ -529,12 +580,19 @@ button:hover {
 }
 
 .modal .modal_content {
-    background-color: white;
+    background-color: transparent;
     padding: 2rem 4rem;
 }
 
 .modal .modal_content button {
-  width: 100%;
+    width: 100%;
     padding: 4%;
 }
 
+.besked{
+    margin-top: 20%;
+    font-style: italic;
+    border: 1px solid #dddddd;
+    padding: 2%;
+    border-radius: 10px;
+}
