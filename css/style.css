@@ -567,27 +567,22 @@ button:hover {
 /*MAPBOX */
 
 #map1 {
-    position: absolute;
-    top: 60%;
-    bottom: 150%;
-    width: 40%;
-    height: 35%;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    
 }
 
 #map2 {
-    position: absolute;
-    top: 100%;
-    bottom: 250%;
-    width: 40%;
-    height: 35%;
+    width: 300px;
+    height: 300px;
+    background-color: blue;
 }
 
 #map3 {
-    position: absolute;
-    top: 140%;
-    bottom: 350%;
-    width: 40%;
-    height: 35%;
+   width: 300px;
+    height: 300px;
+    background-color: green;
 }
 
 .skridt {
@@ -598,8 +593,12 @@ button:hover {
 
 #indtast {
     margin-left: 5%;
-    margin-right: 50%;
+    margin-right: 5%;
     grid-column: 1;
+}
+
+#indtast h1 {
+    margin: 0;
 }
 
 #indtast h2 {
@@ -616,6 +615,10 @@ button:hover {
 
 .ruter {
     grid-column: 2;
+    justify-content: center;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat (1,1fr);
 }
 
 .ruter input {
@@ -623,6 +626,23 @@ button:hover {
     margin-bottom: 27%;
 }
 
+.skridt button {
+    background-color: #ec9335;
+    border: 2px solid #ec9335;
+    border-radius: 6px;
+    color: #fff;
+    font-size: ;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.skridt button:hover {
+    cursor: pointer;
+    background-color: #3cac4c;
+    border: 2px solid #3cac4c;
+}
 
 
 /* MODAL/POPUP VINDUE */
