@@ -1,36 +1,45 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(runningwoman.jpg);
+    background-attachment: fixed;
+}
+
 #map1 {
     position: absolute;
-    top: 140%;
+    top: 60%;
     bottom: 150%;
-    width: 35%;
+    width: 40%;
     height: 35%;
 }
 
 #map2 {
     position: absolute;
-    top: 260%;
+    top: 100%;
     bottom: 250%;
-    width: 35%;
+    width: 40%;
     height: 35%;
 }
 
 #map3 {
     position: absolute;
-    top: 360%;
+    top: 140%;
     bottom: 350%;
-    width: 35%;
+    width: 40%;
     height: 35%;
 }
 
 #indtast {
-    margin-left: 30%;
-    margin-right: 30%;
-
-}
+    margin-left: 5%;
+    margin-right: 50%;
+grid-column: 1;
+    }
 
 #indtast h2 {
     padding-top: 2%;
-    padding-bottom: 5;
+    padding-bottom: 2%;
     background-color: #16293D;
     color: white;
 }
@@ -39,5 +48,22 @@ input {
     width: 90%;
 
 }
-
-tr {}
+#ruter{
+    margin-left: 5%;
+    margin-right: 25%;
+    grid-column: 2;
+}
+button{
+    
+    background-color: #ec9335;
+    border-radius: 40px;
+    padding: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+    border: none;
+    transition: 0.3s;
+}
+#ruter input{
+    margin-left: 15%;
+    margin-bottom:27%;
+}
