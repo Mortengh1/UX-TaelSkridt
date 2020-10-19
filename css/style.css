@@ -495,7 +495,7 @@ button:hover {
 
 
 .rediger1 {
-grid-column: 1;    
+    grid-column: 1;
 }
 
 .rediger2 {
@@ -564,6 +564,65 @@ grid-column: 1;
 
 }
 
+/*MAPBOX */
+
+#map1 {
+    position: absolute;
+    top: 60%;
+    bottom: 150%;
+    width: 40%;
+    height: 35%;
+}
+
+#map2 {
+    position: absolute;
+    top: 100%;
+    bottom: 250%;
+    width: 40%;
+    height: 35%;
+}
+
+#map3 {
+    position: absolute;
+    top: 140%;
+    bottom: 350%;
+    width: 40%;
+    height: 35%;
+}
+
+.skridt {
+    display: grid;
+}
+
+
+
+#indtast {
+    margin-left: 5%;
+    margin-right: 50%;
+    grid-column: 1;
+}
+
+#indtast h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #16293D;
+    color: white;
+}
+
+#indtast input {
+    width: 90%;
+
+}
+
+.ruter {
+    grid-column: 2;
+}
+
+.ruter input {
+    margin-left: 15%;
+    margin-bottom: 27%;
+}
+
 
 
 /* MODAL/POPUP VINDUE */
@@ -589,7 +648,7 @@ grid-column: 1;
     padding: 4%;
 }
 
-.besked{
+.besked {
     margin-top: 20%;
     font-style: italic;
     border: 1px solid #dddddd;

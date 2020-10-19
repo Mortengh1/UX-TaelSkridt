@@ -82,6 +82,15 @@ $(document).ready(function () { // kører så snart DOM er klar
         return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     }
 
+    //MAPBOX
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-74.50, 40],
+        zoom: 9
+    });
+
 
     //MODAL/POPUP VINDUE
     setTimeout(function () {
