@@ -21,9 +21,10 @@
     </header>
     <main>
         <article>
-            <h1>Indtast skridt</h1>
+            
             <section id="indtast">
-                <div id="uge1">
+<h1>Indtast skridt</h1>
+                                   <section id="uge1">
                     <h2>Uge 41</h2>
                     <table>
                     <tr>
@@ -96,8 +97,8 @@
                         </td>
                     </tr>
                     </table>
-                </div>
-                <div id="uge2">
+                </section>
+                <section id="uge2">
                     <h2>Uge 42</h2>
                     <table>
                     <tr>
@@ -170,20 +171,25 @@
                         </td>
                     </tr>
                     </table>
-                </div>
+                </section>
                 <button>Gem</button>
             </section>
+            <section id="ruter">
             <h2>Foreslåede ruter</h2>
-            <div id="map1"></div>
-             <div id="map2"></div>
-             <div id="map3"></div>
+            <section id="map1"></section>
+            <input type="checkbox">
+             <section id="map2"></section>
+             <input type="checkbox">
+             <section id="map3"></section>
+             <input type="checkbox">
             <script>
                 mapboxgl.accessToken = 'pk.eyJ1IjoibmFnZ29yYXRoIiwiYSI6ImNrZnFraHBkNTBidXYydG8wcnNpd2diY2wifQ.XACaF-Waep-sSnedONVNlg';
                 var map = new mapboxgl.Map({
                     container: 'map1', // container id
-                    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-                    center: [-74.5, 40], // starting position [lng, lat]
-                    zoom: 9 // starting zoom
+                    style: 'mapbox://styles/naggorath/ckggctai900d119ntb6jfzwwi', // style URL
+                    center: [10.162, 56.148], // starting position [lng, lat]
+                    
+                    zoom: 13 // starting zoom
                 });
             </script>
            
@@ -191,9 +197,10 @@
                 mapboxgl.accessToken = 'pk.eyJ1IjoibmFnZ29yYXRoIiwiYSI6ImNrZnFraHBkNTBidXYydG8wcnNpd2diY2wifQ.XACaF-Waep-sSnedONVNlg';
                 var map = new mapboxgl.Map({
                     container: 'map2', // container id
-                    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-                    center: [-74.5, 40], // starting position [lng, lat]
-                    zoom: 9 // starting zoom
+                    style: 'mapbox://styles/naggorath/ckggctai900d119ntb6jfzwwi', // style URL
+                    center: [10.215, 56.117], // starting position [lng, lat]
+                    
+                    zoom: 13 // starting zoom
                 });
             </script>
             
@@ -201,12 +208,13 @@
                 mapboxgl.accessToken = 'pk.eyJ1IjoibmFnZ29yYXRoIiwiYSI6ImNrZnFraHBkNTBidXYydG8wcnNpd2diY2wifQ.XACaF-Waep-sSnedONVNlg';
                 var map = new mapboxgl.Map({
                     container: 'map3', // container id
-                    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-                    center: [-74.5, 40], // starting position [lng, lat]
-                    zoom: 9 // starting zoom
+                    style: 'mapbox://styles/naggorath/ckggctai900d119ntb6jfzwwi', // style URL
+                    center: [12.563, 55.686], // starting position [lng, lat]
+                    
+                    zoom: 13 // starting zoom
                 });
             </script>
-
+</section>
         </article>
     </main>
     <footer>
